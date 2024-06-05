@@ -29,8 +29,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/GuilhermeFiorot/minimalapi:latest
-            ghcr.io/GuilhermeFiorot/minimalapi:${{ github.sha }}
+            ghcr.io/guilhermefiorot/minimalapi:latest
+            ghcr.io/guilhermefiorot/minimalapi:${{ github.sha }}
 
       - name: Logout from GitHub Container Registry
         run: docker logout ghcr.io
